@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* reset.css */
+
+html{ font-size:24px; }
+body{ 
+    margin:0; 
+    font-family: 'Inter', sans-serif; 
+    color: #58412A;
+}
+h1,h2,h3, b{
+    font-family: 'Prociono', serif;
+}
+
+h1,h2,h3,p,figure{ margin:0 }
+ul,li{ margin:0; padding:0; list-style: none;}
+img{ vertical-align: middle; }
+a{ text-decoration: none;  color:#58412A; }
+
+
+*{ box-sizing: border-box; }
+
+
+
+/*인덱스 뿐만 아니라 다른 페이지에서도 반복적으로 사용되는 테그*/
+.btn-view{
+    font: 32px; text-decoration: underline;
+    font-family: 'Prociono', serif;
+}

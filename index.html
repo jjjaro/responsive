@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마지막쉅</title>
+  <!-- 가져온 스크립트 링크! 내가만든 링크 위쪽에 붙여야함 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel = "stylesheet" href="./css/index.css">
+</head>
+<body>
+  <!-- index.html / index.css, reset.css(배포할때리셋) -->
+
+  <header>
+    <div>
+      <h1><a herf="#">rerave</h1>
+      <nav>
+        <a href="#">ABOUT</a>
+        <a href="#">PRODUCT</a>
+        <a href="#">CONTACT</a>
+        <a href="#">SURVICE</a>
+      </nav>
+      <div>
+        <input type="search" name="sr">
+      </div>
+    </div>
+
+  </header>
+
+
+  <main>
+    <figure class="spot">
+    <!-- div / figure 사용고민, 가벼운건 figure -->
+      <img src="./img/CON1.jpg" alt="">
+      <figcaption>
+        <b class="ani-txt">REVIVE YOUR YOUTH
+          AND BEAUTIFUL MOMENT
+        </b>
+        <p class="ani-txt">
+          푸른 바다와 깊이 있는 연구가 만나 만드는 경이로운 가치
+        </p>
+        <a href="#" class="btn-view ani-txt">View more</a>
+      </figcaption>
+    </figure>
+
+    <article class="product"> <!-- 제목이있는세션 -->
+      <h2>PRODUCT</h2>
+
+      <div class="slide">
+        <div class="swiper-wrapper"> <!-- 배너를 묶는 태그 -->
+          <figure class="swiper-slide">
+            <img src="./img/product01.png" >
+            <figcaption> 
+              <b>YOUTH</b>
+              <p>푸른 바다와 경이로운 가치</p>
+            </figcaption>
+          </figure>
+
+          <figure class="swiper-slide">
+            <img src="./img/product02.png" >
+            <figcaption> 
+              <b>YOUTH</b>
+              <p>푸른 바다와 경이로운 가치</p>
+            </figcaption>
+          </figure>
+
+          <figure class="swiper-slide">
+            <img src="./img/product03.png" >
+            <figcaption> 
+              <b>YOUTH</b>
+              <p>푸른 바다와 경이로운 가치</p>
+            </figcaption>
+          </figure>
+
+          <figure class="swiper-slide">
+            <img src="./img/product04.png" >
+            <figcaption> 
+              <b>YOUTH</b>
+              <p>푸른 바다와 경이로운 가치</p>
+            </figcaption>
+          </figure>
+
+          <figure class="swiper-slide">
+            <img src="./img/product02.png" >
+            <figcaption> 
+              <b>YOUTH</b>
+              <p>푸른 바다와 경이로운 가치</p>
+            </figcaption>
+          </figure>
+
+          <figure class="swiper-slide">
+            <img src="./img/product03.png" >
+            <figcaption> 
+              <b>YOUTH</b>
+              <p>푸른 바다와 경이로운 가치</p>
+            </figcaption>
+          </figure>
+
+          <figure class="swiper-slide">
+            <img src="./img/product04.png" >
+            <figcaption> 
+              <b>YOUTH</b>
+              <p>푸른 바다와 경이로운 가치</p>
+            </figcaption>
+          </figure>
+
+          <figure class="swiper-slide">
+            <img src="./img/product02.png" >
+            <figcaption> 
+              <b>YOUTH</b>
+              <p>푸른 바다와 경이로운 가치</p>
+            </figcaption>
+          </figure>
+
+
+
+
+        </div>
+      </div>
+
+
+    </article>
+
+
+
+
+
+  </main>
+
+
+  <footer>
+    <div></div>
+  </footer>
+
+
+<!-- 가져온 스크립트링크 제ㅔㅔ일 하단 바디가 끝나기 전에 붙여넣기 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".slide", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints:{
+          0:{
+            slidesPerView: 1,
+            spaceBetween: 0,
+          }, 
+          480:{
+            slidesPerView: 4,
+            spaceBetween: 30,
+          }
+        }
+    });
+  </script>
+
+
+</body>
+</html>
